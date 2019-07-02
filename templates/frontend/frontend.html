@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pile of money</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="../static/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../static/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../static/css/ie8.css" /><![endif]-->
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a class="logo"><strong>Pile of money</strong></a>
+									<ul class="icons">
+                                                                            <br><span class="icon-Innovamars"></span></br>
+                                                                            
+										<li><a href="#" class="icon fa-home"><span class="label">Inicio</span></a></li>
+										<li><a href="#" class="icon fa-bell-o"><span class="label">Avisos</span></a></li>
+										<li><a href="#" class="icon fa-comments"><span class="label">Comentarios</span></a></li>
+										<li><a href="#" class="icon fa-cog"><span class="label">Configuración</span></a></li>
+										<li><a href="{{ url_for('logout') }}" class="icon fa-power-off"><span class="label">Logout</span></a></li>
+                                                                                
+                
+                
+									</ul>
+								</header>
+                                 							<!-- Content -->
+								<section>
+									<div class="container ">								
+										{% block contenido %}
+										{% endblock %}
+									</div>
+								</section>
+                                    
+						</div>
+					</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+	<div class="inner">
+
+		<!-- Search -->
+			<section id="search" class="alt">
+				<form method="post" action="#">
+					<input type="text" name="query" id="query" placeholder="Search" />
+				</form>
+			</section>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<header class="major">
+					<h2>Menu</h2>
+				</header>
+				<ul>
+						<li><a href="{{ url_for('empresa') }}">Mi organización</a></li>
+					<li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+					<li>
+							<span class="opener">Generar ingresos</span>
+							<ul>
+								<li><a href="{{ url_for('posicionamiento') }}">Posicionamiento en internet</a></li>
+								<li><a href="{{ url_for('tendencias') }}">Reconocimiento de tendencias</a></li>
+								<li><a href="{{ url_for('comunicacion') }}">Canales de comunicacion</a></li>
+								<li><a href="{{ url_for('competencia') }}">Monitoreo de la competencia</a></li>
+								<li><a href="{{ url_for('clientes') }}">Busqueda de clientes</a></li>
+								<li><a href="{{ url_for('mensaje') }}">Efectividad del mensaje de ventas</a></li>
+								
+							</ul>
+					</li>
+					<li>
+						<span class="opener">Uso del efectivo</span>
+						<ul>
+							<li><a href="{{ url_for('verfinanzas') }}">Ver informacion financiera</a></li>
+							<li><a href="{{ url_for('subir') }}">Subir informacion financiera</a></li>
+							<li><a href="{{ url_for('suposicionesinternas') }}">Suposiciones y variables</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<span class="opener">SROI</span>
+						<ul>
+							<li><a href="{{ url_for('crearproyecto') }}">Nuevo proyecto</a></li>
+							<li><a href="{{ url_for('verproyectos') }}">Ver proyectos</a></li>					
+								
+						</ul>
+					</li>
+					
+					<li>
+						<span class="opener">Configuracion</span>
+						<ul>
+							<li><a href="{{ url_for('perfil') }}">Perfil usuario</a></li>
+							
+							
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; Innovamars. All rights reserved.  </a>.</p>
+			</footer>
+
+	</div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/skel.min.js"></script>
+<script src="../static/js/util.js"></script>
+<!--[if lte IE 8]><script src="../static/js/ie/respond.min.js"></script><![endif]-->
+<script src="../static/js/main.js"></script>
+
+
+</body>
+</html>

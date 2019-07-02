@@ -1,0 +1,107 @@
+{% extends "frontend/navbar.html" %}
+
+{% block contenido %}
+<head>
+<style type="text/css">
+   .boton_personalizado{
+     text-decoration: none;
+     padding: 10px;
+     font-weight: 600;
+     font-size: 20px;
+     color: #ffffff;
+     background-color: #1883ba;
+     border-radius: 6px;
+     border: 2px solid #ffffff;
+   }
+   .boton_personalizado:hover{
+     color: #1883ba;
+     background-color: #ffffff;
+   }
+</style>
+<style>
+   body{
+     
+   }
+   #wrap{
+     margin: 0 auto;
+     width: 500px;
+   }
+   details{
+     border: 1px solid #CC0;
+     padding: 5px;
+     font-family: Arial;
+     margin-bottom:5px;
+     width:500px;
+     background-color: #EEE;
+   }
+   summary{
+     font-weight: bold;
+     color: SteelBlue;
+     font-size: 12px;
+     cursor: pointer;
+   }
+   p, a, span{
+     font-size: 12px;
+     color: #666;
+   }
+   details summary::-webkit-details-marker {
+     color: #CC0;
+   }
+   h2{
+     color: black;
+     font-size: 40px;
+     font-family: Helvetica;
+     text-align: center;
+   }
+   #logo{
+     background: SteelBlue url() no-repeat;
+     background-position: 0 -224px;
+     height: 62px;
+     width: 230px;
+     margin-top: 11px;
+     padding:3px;
+   }
+   </style>
+   
+</head>
+<body>
+     
+<div id="wrap">
+<h2>FAQ Generar Valor Social - Ambiental</h2>
+<details>
+   <summary>¿Qué hace el módulo de SROI (generar valor social - ambiental?) </summary>
+   <p>Utilizando varias metodologías de evaluación de proyectos de inversión social-ambiental, principalmente el SROI, genera simulaciones de posibles escenarios y su impacto en la generación de valor, permitiendo a la gerencia tomar decisiones en temas sociales y ambientales sin afectar los flujos de efectivo.</br>    
+   </p>
+</details>
+<details>
+   <summary>¿Cómo funciona el módulo de SROI (generar valor social - ambiental? </summary>
+   <p>Mediante modelos estadísticos creados en la evaluación de proyectos de inversión, realiza simulaciones de posibles escenarios, tomando en consideración:
+      </br>
+         Nivel de incertidumbre.
+      </br>
+         Riesgos.
+      </br>
+         Generación de valor.
+         
+   </p>
+</details>
+<details>
+   <summary>¿Por qué es importante el módulo de SROI (generar valor social - ambiental? </summary>
+   <p>Históricamente, el indicador financiero es el principal elemento utilizado para evaluar el éxito de una empresa, eso a causado que temas sociales o ambientales caigan en un plano mucho menos importante.
+         
+      </br>    
+      Cada vez es más importante poder cuantificar el valor generado por los proyectos sociales-ambientales.
+   .</p>
+</details>
+</div>
+<br></br>
+<br></br>
+
+<center> 
+<a class="boton_personalizado" href="{{ url_for('login') }}">Empezar</a>
+</center> 
+</body>
+</html>
+
+{% endblock %}
+

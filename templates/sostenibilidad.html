@@ -1,0 +1,302 @@
+{% extends "frontend/frontend.html" %}
+
+{% block contenido %}
+
+<head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <style>
+          
+               
+        </style>
+
+</head>
+<h3>Evaluar sostenibilidad</h3>
+<table class="egt">
+        <tr>
+          <th>Proyecto</th>
+          <th>{{contact.nombreproyecto}}</th>
+        <tr>
+        <td>Descripción</td>
+            <td>{{contact.descripcionproyecto}}</td>
+            </tr>          
+        </tr>
+        <td>Recomendación</td>
+            <td>{{contact.recomendacion}}</td>
+            </tr>          
+        </tr>
+       
+              
+</table>
+
+<form action="#" method="post">
+    <h3>INGRESOS</h3>
+    <table>
+        <tr>
+            <th>
+                <div class="form-group row">
+                    <label for="ingreso" class="col-sm-2 col-form-label">Detalle</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="ingreso"
+                         title="Requiere nombre del proyecto"  
+                        name="ingreso" value={{contact.ingreso}} >
+                        
+                    </div>
+                </div>
+            </th>
+
+            <td>
+                <div class="form-group row">
+                    <label for="montoingreso" class="col-sm-2 col-form-label">
+                        Monto
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="montoingreso" 
+                        name="montoingreso" value={{contact.montoingreso}}>
+                    </div>
+                </div>
+            </td>
+            
+        </table>
+        <table>
+                <tr>
+                    <th>
+                        <div class="form-group row">
+                            <label for="ingreso1" class="col-sm-2 col-form-label">Detalle</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ingreso1"
+                                 title="Requiere nombre del proyecto"  
+                                name="ingreso1" value={{contact.ingreso1}} >
+                                
+                            </div>
+                        </div>
+                    </th>
+        
+                    <td>
+                        <div class="form-group row">
+                            <label for="montoingreso1" class="col-sm-2 col-form-label">
+                                Monto
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="montoingreso1" 
+                                name="montoingreso1" value={{contact.montoingreso1}}>
+                            </div>
+                        </div>
+                    </td>
+                    
+                </table>
+                <table>
+                        <tr>
+                            <th>
+                                <div class="form-group row">
+                                    <label for="ingreso2" class="col-sm-2 col-form-label">Detalle</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="ingreso2"
+                                         title="Requiere nombre del proyecto" 
+                                        name="ingreso2" value={{contact.ingreso2}} >
+                                        
+                                    </div>
+                                </div>
+                            </th>
+                
+                            <td>
+                                <div class="form-group row">
+                                    <label for="montoingreso2" class="col-sm-2 col-form-label">
+                                        Monto
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="montoingreso2" 
+                                        name="montoingreso2" value={{contact.montoingreso2}}>
+                                    </div>
+                                </div>
+                            </td>
+                            
+                        </table>
+                        <table>
+                                <tr>
+                                    <th>
+                                        <div class="form-group row">
+                                            <label for="ingreso3" class="col-sm-2 col-form-label">Detalle</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="ingreso3"
+                                                 title="Requiere nombre del proyecto"  
+                                                name="ingreso3" value={{contact.ingreso3}} >
+                                                
+                                            </div>
+                                        </div>
+                                    </th>
+                        
+                                    <td>
+                                        <div class="form-group row">
+                                            <label for="montoingreso3" class="col-sm-2 col-form-label">
+                                                Monto
+                                            </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="montoingreso3" 
+                                                name="montoingreso3" value={{contact.montoingreso3}}>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    
+                                </table>
+                                <br></br>
+                                <h3>GASTOS</h3>
+
+                                
+                                        <table>
+                                                <tr>
+                                                    <th>
+                                                        <div class="form-group row">
+                                                            <label for="gasto1" class="col-sm-2 col-form-label">Detalle</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="gasto1"
+                                                                 title="Requiere nombre del proyecto"   
+                                                                name="gasto1" value={{contact.gasto1}} >
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                        
+                                                    <td>
+                                                        <div class="form-group row">
+                                                            <label for="montogasto1" class="col-sm-2 col-form-label">
+                                                                Monto
+                                                            </label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="montogasto1" 
+                                                                name="montogasto1" value={{contact.montogasto1}}>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                </table>
+                                                <table>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="form-group row">
+                                                                    <label for="gasto2" class="col-sm-2 col-form-label">Detalle</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="gasto2"
+                                                                         title="Requiere nombre del proyecto"  
+                                                                        name="gasto2" value={{contact.gasto2}} >
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                
+                                                            <td>
+                                                                <div class="form-group row">
+                                                                    <label for="montogasto2" class="col-sm-2 col-form-label">
+                                                                        Monto
+                                                                    </label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="text" class="form-control" id="montogasto2" 
+                                                                        name="montogasto2" value={{contact.montogasto2}}>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            
+                                                        </table>
+                                                        <table>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div class="form-group row">
+                                                                            <label for="gasto3" class="col-sm-2 col-form-label">Detalle</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control" id="gasto3"
+                                                                                 title="Requiere nombre del proyecto"  
+                                                                                name="gasto3" value={{contact.gasto3}} >
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </th>
+                                                        
+                                                                    <td>
+                                                                        <div class="form-group row">
+                                                                            <label for="montogasto3" class="col-sm-2 col-form-label">
+                                                                                Monto
+                                                                            </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control" id="montogasto3" 
+                                                                                name="montogasto3" value={{contact.montogasto3}}>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    
+                                                                </table>
+                                                                <table>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <div class="form-group row">
+                                                                                    <label for="gasto4" class="col-sm-2 col-form-label">Detalle</label>
+                                                                                    <div class="col-sm-10">
+                                                                                        <input type="text" class="form-control" id="gasto4"
+                                                                                         title="Requiere nombre del proyecto"   
+                                                                                        name="gasto4" value={{contact.gasto4}} >
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </th>
+                                                                
+                                                                            <td>
+                                                                                <div class="form-group row">
+                                                                                    <label for="montogasto4" class="col-sm-2 col-form-label">
+                                                                                        Monto
+                                                                                    </label>
+                                                                                    <div class="col-sm-10">
+                                                                                        <input type="text" class="form-control" id="montogasto4" 
+                                                                                        name="montogasto4" value={{contact.montogasto4}}>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            
+                                                                        </table>
+                                                                        <table>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="gasto5" class="col-sm-2 col-form-label">Detalle</label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control" id="gasto5"
+                                                                                                 title="Requiere nombre del proyecto"  
+                                                                                                name="gasto5" value={{contact.gasto5}} >
+                                                                                                
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </th>
+                                                                        
+                                                                                    <td>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="montogasto5" class="col-sm-2 col-form-label">
+                                                                                                Monto
+                                                                                            </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control" id="montogasto5" 
+                                                                                                name="montogasto5" value={{contact.montogasto5}}>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    
+                                                                                </table>
+
+    <br></br>
+    
+
+
+  <button type="submit" class="btn btn-secondary"  value="Submit">Aceptar</button>
+
+  <button type="submit" class="btn btn-secondary"  value="Submit">Cancelar</button>
+
+</form>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+{% endblock %}
+

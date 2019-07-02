@@ -1,0 +1,101 @@
+{% extends "frontend/navbar.html" %}
+
+{% block contenido %}
+<head>
+<style type="text/css">
+   .boton_personalizado{
+     text-decoration: none;
+     padding: 10px;
+     font-weight: 600;
+     font-size: 20px;
+     color: #ffffff;
+     background-color: #1883ba;
+     border-radius: 6px;
+     border: 2px solid #ffffff;
+   }
+   .boton_personalizado:hover{
+     color: #1883ba;
+     background-color: #ffffff;
+   }
+</style>
+<style>
+   body{
+     
+   }
+   #wrap{
+     margin: 0 auto;
+     width: 500px;
+   }
+   details{
+     border: 1px solid #CC0;
+     padding: 5px;
+     font-family: Arial;
+     margin-bottom:5px;
+     width:500px;
+     background-color: #EEE;
+   }
+   summary{
+     font-weight: bold;
+     color: SteelBlue;
+     font-size: 12px;
+     cursor: pointer;
+   }
+   p, a, span{
+     font-size: 12px;
+     color: #666;
+   }
+   details summary::-webkit-details-marker {
+     color: #CC0;
+   }
+   h2{
+     color: black;
+     font-size: 40px;
+     font-family: Helvetica;
+     text-align: center;
+   }
+   #logo{
+     background: SteelBlue url() no-repeat;
+     background-position: 0 -224px;
+     height: 62px;
+     width: 230px;
+     margin-top: 11px;
+     padding:3px;
+   }
+   </style>
+   
+</head>
+<body>
+     
+<div id="wrap">
+<h2>FAQ Generar Ingresos</h2>
+<details>
+   <summary>¿Qué es Pile of Money?</summary>
+   <p>Es un software que ayuda a generar ingresos, para optimizar los flujos de efectivo, 
+      mientras sensibilizar y apoya a invertir en generar valor social - ambiental.    
+   </p>
+</details>
+<details>
+   <summary>¿Qué hace el módulo de generar ingresos? </summary>
+   <p>Recolecta datos masivos de internet para entender el mercado, incluido los competidores.
+      
+      </br>
+      Ayuda a encontrar potenciales clientes y entender los clientes actuales, para ayudar a la entidad a generar ingresos.
+   </p>
+</details>
+<details>
+   <summary>¿Cómo funciona el módulo de generar ingresos? </summary>
+   <p>Busca datos masivos en internet, por ejemplo en redes sociales, para encontrar información que ayude a los tomadores de decisión a entender el mercado y encontrar potenciales clientes, mediante la aplicación de algoritmos de psicometría (cómo piensan las personas).</br>    
+   </p>
+</details>
+</div>
+<br></br>
+<br></br>
+
+<center> 
+<a class="boton_personalizado" href="{{ url_for('faquso') }}">Siguiente</a>
+</center> 
+</body>
+</html>
+
+{% endblock %}
+

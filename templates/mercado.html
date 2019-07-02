@@ -1,0 +1,92 @@
+{% extends "frontend/frontend.html" %}
+
+{% block contenido %}
+
+<head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <style>
+          
+               
+        </style>
+
+</head>
+<h3>Validación de los stakeholder (actores claves, como: empleados, clientes, comunidad, proveedores, entre otros.</h3>
+<table class="egt">
+        <tr>
+                <th>Proyecto</th>
+                <th>{{contact.nombreproyecto}}</th>
+              <tr>
+              <td>Descripción</td>
+                  <td>{{contact.descripcionproyecto}}</td>
+                  </tr>          
+              </tr>
+              <td>Recomendación</td>
+                  <td>{{contact.recomendacion}}</td>
+                  </tr>          
+              </tr>
+             
+              
+</table>
+
+<form action="#" method="post">
+        <div class="form-group row">
+                <label for="cliente" class="col-sm-5 col-form-label">¿Quién paga por tu producto/servicio o quién pone el dinero para este proyecto?</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="cliente"
+                    required="required"  title="Requiere nombre del proyecto"  placeholder="La empresa donde laboro, mediante el programa de RSE" 
+                    name="cliente" value={{contact.cliente}} >
+                    
+                </div>
+            </div>
+            <div class="form-group row">
+                    <label for="beneficiario" class="col-sm-5 col-form-label">¿Quién se beneficia de este proyecto?</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="beneficiario"
+                         title="Requiere nombre del proyecto" placeholder="Niños en riesgo social"  
+                        name="beneficiario" value={{contact.beneficiario}} >
+                        
+                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="soluciona" class="col-sm-5 col-form-label">
+                    ¿Por qué es importante realizar este proyecto? 
+                </label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="soluciona" placeholder="Los niños son una población en riesgo social, que necesitan ayuda."  
+                    name="soluciona" value={{contact.soluciona}}>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ubicacion" class="col-sm-5 col-form-label">
+                    ¿En que lugar se realizaría el proyecto?
+                </label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="ubicacion" placeholder="Managua, Nicaragua"  
+                    name="ubicacion" value={{contact.ubicacion}}>
+                </div>
+            </div>
+            
+               
+    <br></br>
+    
+
+
+  <button type="submit" class="btn btn-secondary"  value="Submit">Aceptar</button>
+
+  <button type="submit" class="btn btn-secondary"  value="Submit">Cancelar</button>
+
+</form>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+{% endblock %}
+

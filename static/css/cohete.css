@@ -1,0 +1,13 @@
+#ball{
+  width:                300px;
+  height:               300px;
+  position:             absolute;
+  left:                 0px;
+  top:                  0px;
+  background-image: url("https://m1.behance.net/rendition/modules/100887987/disp/c845b52e70de95a5b73b23f254ef1d29.gif");
+
+  -moz-border-radius:    50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius:      50%;
+  -ms-border-radius:     50%;
+}

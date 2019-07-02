@@ -1,0 +1,19 @@
+{% extends "frontend/frontend.html" %}
+
+
+{% block contenido %}
+<head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <style>
+            
+        </style>
+</head>
+
+Esta seguro de eliminar está empresa: {{contact.entidad}}?
+<br></br>
+<form method="post">
+    <button type="submit" class="btn btn-danger"  value="Submit">Eliminar</button>
+</form>
+{% endblock %}

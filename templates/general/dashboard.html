@@ -1,0 +1,62 @@
+{% extends "frontend/frontend.html" %}
+
+{% block contenido %}
+
+<head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <style>
+        
+        
+               
+        
+            
+        </style>
+
+</head>
+{% for contact in contact_list if contact.status == "dashboard" %}
+	<table class="egt">
+        <tr>
+		  <th>{{contact.consejouno}}</th>
+		  <td>
+				<a class="btn btn-outline-secondary btn-sm" href="./verdashboarduno/{{contact.id}}"><i class="fa fa-eye"></i></a>
+				
+			
+		</td>
+    	<tr>
+		<tr>
+			<th>{{contact.consejodos}}</th>
+			<td>
+					<a class="btn btn-outline-secondary btn-sm" href="./verdashboarddos/{{contact.id}}"><i class="fa fa-eye"></i></a>
+					
+				
+			</td>
+		<tr>
+			<tr>
+			<th>{{contact.consejotres}}</th>
+			<td>
+					<a class="btn btn-outline-secondary btn-sm" href="./verdashboardtres/{{contact.id}}"><i class="fa fa-eye"></i></a>
+					
+				
+			</td>
+		<tr>
+		<tr>
+			<tr>
+			<th>{{contact.consejotres}}</th>
+			<td>
+					<a class="btn btn-outline-secondary btn-sm" href="./verdashboardcuatro/{{contact.id}}"><i class="fa fa-eye"></i></a>
+					
+				
+			</td>
+		<tr>
+		
+				
+		
+	</table>
+{% endfor %}
+{% endblock %}

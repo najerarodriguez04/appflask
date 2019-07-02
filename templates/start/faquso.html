@@ -1,0 +1,96 @@
+{% extends "frontend/navbar.html" %}
+
+{% block contenido %}
+<head>
+<style type="text/css">
+   .boton_personalizado{
+     text-decoration: none;
+     padding: 10px;
+     font-weight: 600;
+     font-size: 20px;
+     color: #ffffff;
+     background-color: #1883ba;
+     border-radius: 6px;
+     border: 2px solid #ffffff;
+   }
+   .boton_personalizado:hover{
+     color: #1883ba;
+     background-color: #ffffff;
+   }
+</style>
+<style>
+   body{
+     
+   }
+   #wrap{
+     margin: 0 auto;
+     width: 500px;
+   }
+   details{
+     border: 1px solid #CC0;
+     padding: 5px;
+     font-family: Arial;
+     margin-bottom:5px;
+     width:500px;
+     background-color: #EEE;
+   }
+   summary{
+     font-weight: bold;
+     color: SteelBlue;
+     font-size: 12px;
+     cursor: pointer;
+   }
+   p, a, span{
+     font-size: 12px;
+     color: #666;
+   }
+   details summary::-webkit-details-marker {
+     color: #CC0;
+   }
+   h2{
+     color: black;
+     font-size: 40px;
+     font-family: Helvetica;
+     text-align: center;
+   }
+   #logo{
+     background: SteelBlue url() no-repeat;
+     background-position: 0 -224px;
+     height: 62px;
+     width: 230px;
+     margin-top: 11px;
+     padding:3px;
+   }
+   </style>
+   
+</head>
+<body>
+     
+<div id="wrap">
+<h2>FAQ Optimizar el Uso del Efectivo</h2>
+<details>
+   <summary>¿Qué hace el módulo de uso de efectivo? </summary>
+   <p>Toma la información financiera de la entidad, mediante archivos CSV, para ayudar a los tomadores de decisión a optimizar la liquidez de la entidad. El uso recurrente mejora la salud financiera.</br>    
+   </p>
+</details>
+<details>
+   <summary>¿Cómo funciona módulo de uso de efectivo? </summary>
+   <p>Obtiene la información financiera de la empresa, mediante archivos CSV, complementado con la aplicación de algunos cuestionarios, para poder realizar la simulación de varios escenarios sobre una posible proyección de los flujos de efectivo de la empresa.
+         
+         </br>    
+         Utiliza modelos estadísticos para medir la incertidumbre, riesgos y datos históricos de los flujos de efectivo.
+   </p>
+</details>
+
+</div>
+<br></br>
+<br></br>
+
+<center> 
+<a class="boton_personalizado" href="{{ url_for('faqsroi') }}">Siguiente</a>
+</center> 
+</body>
+</html>
+
+{% endblock %}
+

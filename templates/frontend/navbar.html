@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Pile of money</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/css/navbar.css">
+        
+    </head>
+    <body>
+    
+      <nav>
+        <ul class="menu">
+          <li><a href="{{ url_for('introduccion') }}">Inicio</a></li>
+          <!-- products sub-menu -->
+          
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          
+          <li>
+            <a href="#">FAQ</a>
+             <ul>
+              <li>
+                <a href="{{ url_for('faqgenerar') }}">Generar ingresos</a>
+              </li>
+              <li>
+                <a href="{{ url_for('faquso') }}">Usar efectivo</a>
+              </li>
+              <li>
+                <a href="{{ url_for('faqsroi') }}">Valor social - ambiental</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        
+        
+            
+            {% block contenido %} {% endblock %}
+        
+    </body>
+</html>
